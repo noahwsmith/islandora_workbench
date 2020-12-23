@@ -24,11 +24,11 @@ If you don't already have the two required libraries installed, clone this repo 
 
 ## Usage
 
-`./workbench --config config.yml --check`
+`./islandora_workbench --config config.yml --check`
 
 then
 
-`./workbench --config config.yml`
+`./islandora_workbench --config config.yml`
 
 ## The configuration file
 
