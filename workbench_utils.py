@@ -1905,7 +1905,7 @@ def check_input(config, args):
                             # We should really be checking for 404s here. I'm temporarily changing it to just throw a warning rather than fully checking
                             # so we can let checks run overnight without constantly exiting on these 404s
                             message = 'File "' + file_check_row[filename_field] + '" in CSV row "' + file_check_row[config['id_field']] + \
-                                '" has an extension (' + str(extension) + ') that is not allowed in the "' + media_type_file_field + '" field of the "' + media_type + '" media type. NOTE: this might be a 404.'
+                                '" has an extension (' + str(extension) + ') that is not allowed in the "' + media_type_file_field + '" field of the "' + media_type + '" media type. NOTE: this might be a 403 or a 404.'
                             logging.error(message)
                             # sys.exit('Error: ' + message)
 
